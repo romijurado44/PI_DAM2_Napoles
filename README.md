@@ -41,7 +41,7 @@ Agile approach based on **Scrum + Kanban**: short sprints, a prioritised product
 
 | Member | GitHub |
 |--------|--------|
-| romanjurado44 | [@romijurado44](https://github.com/romijurado44) |
+| Román Gutiérrez Jurado | [@romijurado44](https://github.com/romijurado44) |
 
 ## License
 
