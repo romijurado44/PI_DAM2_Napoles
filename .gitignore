@@ -1,0 +1,24 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Office temp files
+~$*
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Builds / dependencies
+build/
+dist/
+out/
+node_modules/
+.gradle/
+.dart_tool/
+
+# Secrets
+.env
+*.keystore
