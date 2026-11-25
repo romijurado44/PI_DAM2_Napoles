@@ -27,7 +27,10 @@ PI_DAM2_Napoles/
 ├── assets/   # Logo and graphic resources
 ├── docs/     # Project documentation (Practice 3: Introduction, Methodology)
 └── src/      # Source code (in progress)
+    └── web/  # Pizzeria website (HTML, CSS and JavaScript) – see src/web/README.md
 ```
+
+To open the website, double-click `src/web/index.html` or run `src/web/iniciar.bat` (local server at http://localhost:5500).
 
 ## Methodology
 
