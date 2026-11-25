@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pizzería Nápoles · La pizzería de Chipiona desde 1985</title>
+  <meta name="description" content="Pizzería Nápoles en Chipiona desde 1985: pizzas a tu gusto con masa casera, burguers, perritos, sándwiches y más. Pedidos a domicilio, para recoger y reservas. Tel. 956 37 34 34.">
+  <meta name="theme-color" content="#2A1F1A">
+  <meta property="og:title" content="Pizzería Nápoles · Chipiona">
+  <meta property="og:description" content="Tradición napolitana, orgullo chipionero. Masa casera y delivery propio desde 1985.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=16">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================== ICONOS ===================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20.5" r="1.5" fill="currentColor"/><circle cx="17" cy="20.5" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z" fill="currentColor"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-dice" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/><circle cx="16" cy="16" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="16" cy="8" r="1.5" fill="currentColor"/><circle cx="8" cy="16" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-dough" viewBox="0 0 24 24"><ellipse cx="12" cy="14" rx="9" ry="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 12c2-2 6-2 8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 11 4 20 4c0 9-6 15-15 15zM5 19l8-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-moto" viewBox="0 0 24 24"><circle cx="5.5" cy="17" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18.5" cy="17" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 17h6l3-6h-4l-2-4H9M14 7h3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <template id="logo-tpl">
+    <svg class="logo-svg" viewBox="40 22 850 285" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M70,230 L70,70 L130,230 L130,70"/>
+        <path d="M315,230 L315,70 L355,70 A37,37 0 0 1 355,144 L315,144"/>
+        <path d="M625,70 L625,230 L685,230"/>
+        <path d="M760,70 L715,70 L715,230 L760,230 M715,150 L750,150"/>
+        <path d="M866,110 A33,40 0 1 0 833,150 A33,40 0 1 1 800,190"/>
+      </g>
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M212,70 Q205,190 168,230" stroke-width="18"/>
+        <path d="M218,70 Q225,190 262,230" stroke-width="18"/>
+        <path d="M200,135 L230,135" stroke-width="10"/>
+        <path d="M180,230 Q215,175 250,230" stroke-width="10"/>
+        <path d="M215,68 L215,42" stroke-width="8"/>
+      </g>
+      <g class="logo-pizza">
+        <circle cx="500" cy="150" r="80" fill="#E9A23B"/>
+        <circle cx="500" cy="150" r="66" fill="#D62828"/>
+        <circle cx="500" cy="150" r="60" fill="#F7C95C"/>
+        <g fill="#9E1B1B">
+          <circle cx="500" cy="150" r="12"/><circle cx="500" cy="106" r="10"/><circle cx="538" cy="128" r="10"/>
+          <circle cx="538" cy="172" r="10"/><circle cx="500" cy="194" r="10"/><circle cx="462" cy="172" r="10"/><circle cx="462" cy="128" r="10"/>
+        </g>
+      </g>
+      <text class="logo-sub" x="465" y="285" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="14" fill="#2D6A4F">PIZZERIA</text>
+    </svg>
+  </template>
+
+  <!-- ===================== CABECERA ===================== -->
+  <header class="header" id="header">
+    <a href="#inicio" class="header__logo" aria-label="Pizzería Nápoles, ir al inicio" data-logo></a>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list">
+        <li><a href="#carta">Carta</a></li>
+        <li><a href="#crea">Pizza a tu gusto</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#info">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+34956373434"><svg><use href="#i-phone"/></svg><span>956 37 34 34</span></a>
+      <button class="icon-btn" id="themeToggle" aria-pressed="false" aria-label="Activar modo oscuro" title="Modo oscuro">
+        <svg><use href="#i-moon"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartOpen" aria-label="Abrir pedido, 0 productos" aria-controls="cart" aria-expanded="false">
+        <svg><use href="#i-cart"/></svg>
+        <span class="cart-btn__count" id="cartCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-controls="mobileMenu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav aria-label="Navegación móvil">
+      <ul>
+        <li><a href="#carta">Carta</a></li>
+        <li><a href="#crea">Pizza a tu gusto</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#info">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="tel:+34956373434">956 37 34 34</a>
+      <div class="socials">
+        <a href="https://www.instagram.com/napolespizzeria_chipiona/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+        <a href="https://www.facebook.com/p/Pizzer%C3%ADa-N%C3%A1poles-100043398536497/?locale=es_ES" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <!-- ===================== PORTADA ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="heroTitle">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <p class="hero__eyebrow">Pizzería desde 1985 · Chipiona</p>
+      <h1 class="hero__title" id="heroTitle" aria-label="Nápoles">
+        <span aria-hidden="true">NAP</span><span class="hero__pizza" id="heroPizza" aria-hidden="true"></span><span aria-hidden="true">LES</span>
+      </h1>
+      <p class="hero__kicker" aria-hidden="true">PIZZERIA</p>
+      <p class="hero__lead">Tradición napolitana, <em>orgullo chipionero</em>. Masa casera hecha cada día, ingredientes frescos y reparto a domicilio todo el año.</p>
+      <div class="hero__cta">
+        <a href="#carta" class="btn btn--primary"><span>Ver la carta</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="#crea" class="btn btn--ghost"><span>Haz tu pizza</span></a>
+      </div>
+      <ul class="hero__facts">
+        <li><svg><use href="#i-pin"/></svg> Av. de la Constitución, 34</li>
+        <li><svg><use href="#i-phone"/></svg> <a href="tel:+34956373434">956 37 34 34</a></li>
+        <li id="heroOpen"><svg><use href="#i-clock"/></svg> <span>…</span></li>
+      </ul>
+    </section>
+
+    <div class="strip" aria-hidden="true">
+      <div class="strip__track">
+        <span>Masa casera</span><b>•</b><span>Delivery propio</span><b>•</b><span>Abierto todo el año</span><b>•</b><span>Desde 1985</span><b>•</b><span>Chipiona</span><b>•</b>
+        <span>Masa casera</span><b>•</b><span>Delivery propio</span><b>•</b><span>Abierto todo el año</span><b>•</b><span>Desde 1985</span><b>•</b><span>Chipiona</span><b>•</b>
+      </div>
+    </div>
+
+    <!-- ===================== POR QUÉ NOSOTROS ===================== -->
+    <section class="section features" aria-labelledby="featTitle">
+      <div class="section__head">
+        <p class="eyebrow">La mejor pizzería de Chipiona</p>
+        <h2 class="display" id="featTitle">Bienvenidos a <em>Nápoles</em></h2>
+        <p class="section__lead">Llevamos desde 1985 compartiendo nuestra pasión por la pizza en Chipiona. Ambiente familiar, buena comida y la atención cercana de siempre.</p>
+      </div>
+      <div class="features__grid">
+        <article class="feature" data-reveal>
+          <span class="feature__icon"><svg><use href="#i-dough"/></svg></span>
+          <h3>Masa propia</h3>
+          <p>100 % casera y elaborada a diario, con la receta que nos acompaña desde el primer día.</p>
+        </article>
+        <article class="feature" data-reveal>
+          <span class="feature__icon"><svg><use href="#i-leaf"/></svg></span>
+          <h3>Ingredientes de calidad</h3>
+          <p>Productos frescos y seleccionados para que cada bocado sepa a auténtico.</p>
+        </article>
+        <article class="feature" data-reveal>
+          <span class="feature__icon"><svg><use href="#i-calendar"/></svg></span>
+          <h3>Todo el año contigo</h3>
+          <p>Abrimos todo el año, de lunes a domingo, para que siempre tengas buena pizza en Chipiona.</p>
+        </article>
+        <article class="feature" data-reveal>
+          <span class="feature__icon"><svg><use href="#i-moto"/></svg></span>
+          <h3>Delivery propio</h3>
+          <p>Servicio a domicilio rápido y seguro, para que tu pizza llegue caliente a casa.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CARTA ===================== -->
+    <section class="section menu" id="carta" aria-labelledby="menuTitle">
+      <div class="section__head">
+        <p class="eyebrow">Nuestra carta</p>
+        <h2 class="display" id="menuTitle">Sólo productos <em>de calidad</em></h2>
+        <p class="section__lead">Pizzas, burguers, perritos, sándwiches, ensaladas… elige lo que más te apetezca hoy y déjanos el resto.</p>
+      </div>
+
+      <div class="menu__tools">
+        <div class="chips" role="group" aria-label="Elegir categoría" id="menuCats"></div>
+        <label class="search">
+          <span class="sr-only">Buscar en la carta</span>
+          <input type="search" id="menuSearch" placeholder="Buscar: pollo, bacon, taco…" autocomplete="off">
+        </label>
+      </div>
+      <p class="sr-only" aria-live="polite" id="menuLive"></p>
+      <div id="menuBody"></div>
+      <p class="menu__empty" id="menuEmpty" hidden>No hemos encontrado nada con esa búsqueda. <button class="link-btn" id="menuReset">Ver toda la carta</button></p>
+    </section>
+
+    <!-- ===================== PIZZA A TU GUSTO ===================== -->
+    <section class="section builder" id="crea" aria-labelledby="builderTitle">
+      <div class="section__head section__head--light">
+        <p class="eyebrow">Pizza a tu gusto</p>
+        <h2 class="display" id="builderTitle">Crea tu <em>pizza</em></h2>
+        <p class="section__lead">Base de tomate y queso con 3 ingredientes incluidos. Elige tamaño, añade lo que quieras y mira cómo queda.</p>
+      </div>
+
+      <div class="builder__grid">
+        <div class="builder__stage">
+          <div class="builder__board">
+            <div class="builder__pizza" id="bPizza"></div>
+          </div>
+          <div class="builder__summary">
+            <p class="builder__name" id="bNameOut">Mi pizza</p>
+            <p class="builder__meta" id="bMeta"></p>
+            <p class="builder__price" aria-live="polite"><span id="bPrice">6,50 €</span></p>
+          </div>
+        </div>
+
+        <form class="builder__controls" id="builderForm" novalidate>
+          <fieldset class="bstep">
+            <legend><span>1</span> Tamaño</legend>
+            <div class="opts opts--sizes" id="bSize"></div>
+          </fieldset>
+          <fieldset class="bstep">
+            <legend><span>2</span> Ingredientes <small id="bCount"></small></legend>
+            <p class="bstep__hint" id="bHint"></p>
+            <div id="bToppings"></div>
+          </fieldset>
+          <div class="bstep">
+            <label for="bName" class="legend"><span>3</span> Ponle nombre <small>(opcional)</small></label>
+            <input class="input" id="bName" type="text" maxlength="28" placeholder="La de los viernes">
+          </div>
+          <div class="builder__actions">
+            <button type="button" class="btn btn--ghost-light" id="bRandom"><svg><use href="#i-dice"/></svg><span>Sorpréndeme</span></button>
+            <button type="button" class="btn btn--ghost-light" id="bReset"><svg><use href="#i-reset"/></svg><span>Empezar de nuevo</span></button>
+            <button type="submit" class="btn btn--primary"><span>Añadir · <b id="bPriceBtn">6,50 €</b></span><svg><use href="#i-cart"/></svg></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== MENÚ INFANTIL ===================== -->
+    <section class="section kids" aria-labelledby="kidsTitle">
+      <div class="kids__card">
+        <div class="kids__text">
+          <p class="eyebrow">Local y para recoger</p>
+          <h2 class="display display--sm" id="kidsTitle">Planes deliciosos para <em>los más peques</em></h2>
+          <p>Porque cuando los peques disfrutan, todos disfrutan. Menús completos y preparados para que se lo pasen en grande comiendo lo que más les gusta.</p>
+        </div>
+        <div class="kids__menus" id="kidsMenus"></div>
+        <img class="kids__photo" src="assets/fotos/menu-infantil.jpg" alt="Menú infantil: hamburguesa con queso y patatas fritas" loading="lazy" width="1200" height="316">
+      </div>
+    </section>
+
+    <!-- ===================== NOSOTROS ===================== -->
+    <section class="section about" id="nosotros" aria-labelledby="aboutTitle">
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="eyebrow">Así es Pizzería Nápoles</p>
+          <h2 class="display" id="aboutTitle">Tradición, familia y <em>sabor</em></h2>
+          <p>Llevamos casi cuatro décadas siendo parte de la vida de Chipiona. Desde el principio tenemos un compromiso claro: pizzas auténticas, con masa propia, ingredientes de calidad y todo el cariño de la cocina tradicional.</p>
+          <p>Nuestro local siempre ha sido punto de encuentro para familias, amigos y amantes de la buena mesa. Y con el servicio a domicilio llevamos el mismo sabor a tu casa.</p>
+          <blockquote class="about__quote">«Gracias por dejarnos formar parte de vuestra mesa durante tantos años.»</blockquote>
+        </div>
+        <div class="about__side">
+          <div class="stats">
+            <div class="stat"><b>1985</b><span>abrimos en Chipiona</span></div>
+            <div class="stat"><b id="yearsOpen">40+</b><span>años de pizzas</span></div>
+            <div class="stat"><b>36</b><span>ingredientes a elegir</span></div>
+            <div class="stat"><b>7/7</b><span>días a la semana</span></div>
+          </div>
+          <figure class="about__photo"><img src="assets/fotos/familia.jpg" alt="La familia que lleva Pizzería Nápoles, en el local" loading="lazy" width="1200" height="800"><figcaption>La familia de Pizzería Nápoles</figcaption></figure>
+          <h3 class="team__title">Una familia trabajando para otras familias</h3>
+          <ul class="team" id="team"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERÍA ===================== -->
+    <section class="section gallery" id="galeria" aria-labelledby="galTitle">
+      <div class="section__head">
+        <p class="eyebrow">Galería</p>
+        <h2 class="display" id="galTitle">Pura <em>tentación</em></h2>
+      </div>
+      <div class="gallery__grid" id="galleryGrid"></div>
+      <p class="gallery__more"><a href="https://www.instagram.com/napolespizzeria_chipiona/" target="_blank" rel="noopener" class="btn btn--small"><svg><use href="#i-instagram"/></svg> Más fotos en Instagram</a></p>
+    </section>
+
+    <!-- ===================== RESERVAS ===================== -->
+    <section class="section reserve" id="reservas" aria-labelledby="resTitle">
+      <div class="reserve__grid">
+        <div class="reserve__intro">
+          <p class="eyebrow">Reservas</p>
+          <h2 class="display" id="resTitle">Tu mesa <em>te espera</em></h2>
+          <p class="section__lead">Reserva tu mesa en un momento. Si sois un grupo grande o tienes cualquier duda, llámanos al <a href="tel:+34956373434">956 37 34 34</a>.</p>
+          <ul class="reserve__perks">
+            <li><svg><use href="#i-check"/></svg> Abrimos de lunes a domingo</li>
+            <li><svg><use href="#i-check"/></svg> Ambiente familiar</li>
+            <li><svg><use href="#i-check"/></svg> Menú infantil para los peques</li>
+          </ul>
+        </div>
+
+        <form class="card form" id="reserveForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="rDate">Fecha</label>
+              <input class="input" type="date" id="rDate" required>
+              <p class="field__err" id="rDateErr"></p>
+            </div>
+            <div class="field">
+              <label for="rTime">Hora</label>
+              <select class="input" id="rTime" required></select>
+              <p class="field__err" id="rTimeErr"></p>
+            </div>
+          </div>
+          <div class="field">
+            <span class="label" id="rPeopleLbl">Personas</span>
+            <div class="stepper" role="group" aria-labelledby="rPeopleLbl">
+              <button type="button" class="stepper__btn" data-step="-1" aria-label="Una persona menos"><svg><use href="#i-minus"/></svg></button>
+              <output id="rPeople" aria-live="polite">2</output>
+              <button type="button" class="stepper__btn" data-step="1" aria-label="Una persona más"><svg><use href="#i-plus"/></svg></button>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="rName">Nombre</label>
+              <input class="input" type="text" id="rName" autocomplete="name" required>
+              <p class="field__err" id="rNameErr"></p>
+            </div>
+            <div class="field">
+              <label for="rPhone">Teléfono</label>
+              <input class="input" type="tel" id="rPhone" autocomplete="tel" inputmode="tel" required>
+              <p class="field__err" id="rPhoneErr"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="rEmail">Email</label>
+            <input class="input" type="email" id="rEmail" autocomplete="email" required>
+            <p class="field__err" id="rEmailErr"></p>
+          </div>
+          <div class="field">
+            <label for="rNotes">Comentarios <small>(opcional)</small></label>
+            <textarea class="input" id="rNotes" rows="2" placeholder="Alergias, trona, celebración…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block"><span>Confirmar reserva</span><svg><use href="#i-arrow"/></svg></button>
+          <p class="form__fine">Versión de demostración: la reserva se guarda solo en este navegador.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== HORARIO · UBICACIÓN · CONTACTO ===================== -->
+    <section class="section info" id="info" aria-labelledby="infoTitle">
+      <div class="section__head">
+        <p class="eyebrow">Contacto</p>
+        <h2 class="display" id="infoTitle">Queremos <em>escucharte</em></h2>
+        <p class="section__lead">¿Dudas, un pedido o reservar mesa? Estaremos encantados de atenderte.</p>
+      </div>
+      <div class="info__grid">
+        <article class="card info__hours">
+          <h3><svg><use href="#i-clock"/></svg> Horario</h3>
+          <p class="open-now" id="openNow"></p>
+          <dl class="seasons" id="seasons"></dl>
+          <p class="muted">Abrimos todo el año.</p>
+          <ul class="contact-list">
+            <li><a href="tel:+34956373434"><svg><use href="#i-phone"/></svg> +34 956 37 34 34</a></li>
+            <li><a href="mailto:info@napolespizzeria.es"><svg><use href="#i-mail"/></svg> info@napolespizzeria.es</a></li>
+            <li><a href="https://www.instagram.com/napolespizzeria_chipiona/" target="_blank" rel="noopener"><svg><use href="#i-instagram"/></svg> @napolespizzeria_chipiona</a></li>
+          </ul>
+        </article>
+
+        <article class="card info__map">
+          <h3><svg><use href="#i-pin"/></svg> Dónde estamos</h3>
+          <address>Av. de la Constitución, 34 · 11550 Chipiona (Cádiz)</address>
+          <div class="map">
+            <iframe title="Mapa: Pizzería Nápoles, Av. de la Constitución 34, Chipiona" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=Pizzer%C3%ADa%20N%C3%A1poles%2C%20Av.%20de%20la%20Constituci%C3%B3n%2034%2C%2011550%20Chipiona&amp;z=16&amp;output=embed"></iframe>
+          </div>
+          <a class="btn btn--small" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+de+la+Constituci%C3%B3n+34%2C+11550+Chipiona" target="_blank" rel="noopener">Cómo llegar <svg><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="card info__contact">
+          <h3><svg><use href="#i-mail"/></svg> Escríbenos</h3>
+          <form class="form form--compact" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cName">Nombre</label>
+              <input class="input" id="cName" type="text" autocomplete="name" required>
+              <p class="field__err" id="cNameErr"></p>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="cEmail">Email</label>
+                <input class="input" id="cEmail" type="email" autocomplete="email" required>
+                <p class="field__err" id="cEmailErr"></p>
+              </div>
+              <div class="field">
+                <label for="cPhone">Teléfono <small>(opcional)</small></label>
+                <input class="input" id="cPhone" type="tel" autocomplete="tel" inputmode="tel">
+              </div>
+            </div>
+            <div class="field">
+              <label for="cSubject">Asunto</label>
+              <input class="input" id="cSubject" type="text" required>
+              <p class="field__err" id="cSubjectErr"></p>
+            </div>
+            <div class="field">
+              <label for="cMsg">Mensaje</label>
+              <textarea class="input" id="cMsg" rows="3" required></textarea>
+              <p class="field__err" id="cMsgErr"></p>
+            </div>
+            <div class="field">
+              <label class="check"><input type="checkbox" id="cPrivacy" required> <span>He leído y acepto la <a href="#">política de privacidad</a></span></label>
+              <p class="field__err" id="cPrivacyErr"></p>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit"><span>Enviar</span><svg><use href="#i-arrow"/></svg></button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIE ===================== -->
+  <footer class="footer">
+    <div class="footer__cta">
+      <p class="footer__big">¿Tienes <em>hambre</em>?</p>
+      <div class="footer__cta-btns">
+        <a href="#carta" class="btn btn--primary btn--xl"><span>Haz tu pedido</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="tel:+34956373434" class="btn btn--ghost-light btn--xl"><svg><use href="#i-phone"/></svg><span>Llamar</span></a>
+      </div>
+    </div>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo_napoles.svg" alt="Logotipo de Pizzería Nápoles" width="310" height="107" loading="lazy">
+        <p>Pizzería en Chipiona desde 1985. Tradición napolitana, orgullo chipionero.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul class="footer__list">
+          <li>Av. de la Constitución, 34<br>11550 Chipiona, Cádiz</li>
+          <li><a href="tel:+34956373434">+34 956 37 34 34</a></li>
+          <li><a href="mailto:info@napolespizzeria.es">info@napolespizzeria.es</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <ul class="footer__list" id="footerHours"></ul>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/napolespizzeria_chipiona/" target="_blank" rel="noopener" aria-label="Instagram de Pizzería Nápoles"><svg><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/p/Pizzer%C3%ADa-N%C3%A1poles-100043398536497/?locale=es_ES" target="_blank" rel="noopener" aria-label="Facebook de Pizzería Nápoles"><svg><use href="#i-facebook"/></svg></a>
+        </div>
+        <ul class="footer__list footer__legal">
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="empleados.html">Acceso empleados</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> Pizzería Nápoles · Chipiona</p>
+      <p>Proyecto TFG</p>
+      <a class="to-top" href="#inicio" aria-label="Volver arriba"><svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </footer>
+
+  <!-- ===================== PEDIDO ===================== -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart" id="cart" aria-labelledby="cartTitle" aria-hidden="true" role="dialog" aria-modal="true" inert>
+    <div class="cart__head">
+      <h2 id="cartTitle">Tu pedido</h2>
+      <ol class="cart__steps" aria-label="Pasos del pedido">
+        <li class="is-active" data-s="1">Cesta</li><li data-s="2">Datos</li><li data-s="3">Listo</li>
+      </ol>
+      <button class="icon-btn" id="cartClose" aria-label="Cerrar pedido"><svg><use href="#i-close"/></svg></button>
+    </div>
+
+    <div class="cart__panel" data-panel="1">
+      <ul class="cart__list" id="cartList"></ul>
+      <div class="cart__empty" id="cartEmpty">
+        <div class="cart__empty-art" id="emptyArt"></div>
+        <p>Tu pedido está vacío.</p>
+        <a href="#carta" class="btn btn--primary" data-close-cart><span>Ver la carta</span></a>
+      </div>
+      <div class="cart__foot" id="cartFoot">
+        <div class="mode seg" role="radiogroup" aria-label="Tipo de pedido">
+          <label><input type="radio" name="modo" value="domicilio" checked><span>A domicilio</span></label>
+          <label><input type="radio" name="modo" value="recoger"><span>Recoger en local</span></label>
+        </div>
+        <dl class="totals" id="totals"></dl>
+        <button class="btn btn--primary btn--block" id="toCheckout"><span>Continuar</span><svg><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+
+    <form class="cart__panel form" data-panel="2" id="checkoutForm" novalidate hidden>
+      <div class="field">
+        <label for="oName">Nombre</label>
+        <input class="input" id="oName" autocomplete="name" required>
+        <p class="field__err" id="oNameErr"></p>
+      </div>
+      <div class="field">
+        <label for="oPhone">Teléfono</label>
+        <input class="input" id="oPhone" type="tel" autocomplete="tel" inputmode="tel" required>
+        <p class="field__err" id="oPhoneErr"></p>
+      </div>
+      <div class="field" id="oAddrField">
+        <label for="oAddr">Dirección de entrega (Chipiona)</label>
+        <input class="input" id="oAddr" autocomplete="street-address" required>
+        <p class="field__err" id="oAddrErr"></p>
+      </div>
+      <div class="field">
+        <span class="label" id="payLbl">Pago</span>
+        <div class="seg" role="radiogroup" aria-labelledby="payLbl">
+          <label><input type="radio" name="pago" value="Efectivo" checked><span>Efectivo</span></label>
+          <label><input type="radio" name="pago" value="Tarjeta"><span>Tarjeta</span></label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="oNotes">Notas <small>(opcional)</small></label>
+        <textarea class="input" id="oNotes" rows="2" placeholder="Piso, timbre, sin cebolla…"></textarea>
+      </div>
+      <dl class="totals" id="totals2"></dl>
+      <div class="cart__nav">
+        <button type="button" class="btn btn--ghost" id="backToCart">Volver</button>
+        <button type="submit" class="btn btn--primary"><span>Confirmar pedido</span><svg><use href="#i-check"/></svg></button>
+      </div>
+      <p class="form__fine">Versión de demostración: no se realiza ningún cobro ni se envía el pedido.</p>
+    </form>
+
+    <div class="cart__panel" data-panel="3" hidden>
+      <div class="done">
+        <div class="done__pizza" id="donePizza"></div>
+        <h3>¡Pedido <span id="orderId">#0000</span> recibido!</h3>
+        <p id="doneMsg"></p>
+        <ol class="tracker" id="tracker" aria-live="polite">
+          <li data-t="0">Recibido</li><li data-t="1">Preparando</li><li data-t="2">En el horno</li><li data-t="3" id="trackLast">En camino</li>
+        </ol>
+        <button class="btn btn--primary" id="newOrder"><span>Hacer otro pedido</span></button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__box">
+      <button class="icon-btn modal__close" id="modalClose" aria-label="Cerrar"><svg><use href="#i-close"/></svg></button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería ampliada" hidden>
+    <button class="icon-btn lightbox__close" id="lbClose" aria-label="Cerrar galería"><svg><use href="#i-close"/></svg></button>
+    <button class="icon-btn lightbox__nav lightbox__prev" id="lbPrev" aria-label="Imagen anterior"><svg><use href="#i-arrow"/></svg></button>
+    <figure class="lightbox__fig"><div id="lbArt"></div><figcaption id="lbCap"></figcaption></figure>
+    <button class="icon-btn lightbox__nav" id="lbNext" aria-label="Imagen siguiente"><svg><use href="#i-arrow"/></svg></button>
+  </div>
+
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js?v=16"></script>
+  <script src="js/pizza.js?v=16"></script>
+  <script src="js/main.js?v=16"></script>
+</body>
+</html>
